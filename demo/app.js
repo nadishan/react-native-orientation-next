@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import Orientation from 'react-native-orientation';
+import Orientation from 'react-native-orientation-next';
 
 export default class Demo extends Component {
   componentWillMount() {

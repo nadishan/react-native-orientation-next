@@ -1,12 +1,10 @@
-## React Native Orientation
-[![npm version](https://badge.fury.io/js/react-native-orientation.svg)](https://badge.fury.io/js/react-native-orientation)
-
+## React Native Orientation Next (A Fork of react-native-orientation-next)
 Listen to device orientation changes in React Native applications and programmatically set preferred orientation on a per screen basis. Works on both Android and iOS.
 
 ## Installing
 
 ```
-npm install react-native-orientation --save
+npm install react-native-orientation-next --save
 ```
 
 ## Linking Native Dependencies
@@ -14,7 +12,7 @@ npm install react-native-orientation --save
 ### Automatic Linking
 
 ```
-react-native link react-native-orientation
+react-native link react-native-orientation-next
 ```
 
 Please note that you **still need to manually configure** a couple files even when using automatic linking. Please see the ['Configuration'](#configuration) section below. You will also **need to restart your simulator** before the package will work properly.
@@ -23,9 +21,9 @@ Please note that you **still need to manually configure** a couple files even wh
 
 **iOS**
 
-1. Add `node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj` to your xcode project, usually under the `Libraries` group
+1. Add `node_modules/react-native-orientation-next/iOS/RCTOrientation.xcodeproj` to your xcode project, usually under the `Libraries` group
 2. Add `libRCTOrientation.a` (from `Products` under `RCTOrientation.xcodeproj`) to build target's `Linked Frameworks and Libraries` list
-3. Add `$(SRCROOT)/node_modules/react-native-orientation/iOS/RCTOrientation/` to `Project Name` -> `Build Settings` -> `Header Search Paths`
+3. Add `$(SRCROOT)/node_modules/react-native-orientation-next/iOS/RCTOrientation/` to `Project Name` -> `Build Settings` -> `Header Search Paths`
 
 
 **Android**
@@ -34,8 +32,8 @@ Please note that you **still need to manually configure** a couple files even wh
 
     ```
     ...
-    include ':react-native-orientation', ':app'
-    project(':react-native-orientation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation/android')
+    include ':react-native-orientation-next', ':app'
+    project(':react-native-orientation-next').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation-next/android')
     ```
 
 2. In `android/app/build.gradle`
@@ -44,7 +42,7 @@ Please note that you **still need to manually configure** a couple files even wh
     ...
     dependencies {
         ...
-        compile project(':react-native-orientation')
+        compile project(':react-native-orientation-next')
     }
     ```
 
@@ -115,9 +113,9 @@ Implement `onConfigurationChanged` method in `MainActivity.java`
 
 ## Usage
 
-To use the `react-native-orientation` package in your codebase, you should use the Orientation module:
+To use the `react-native-orientation-next` package in your codebase, you should use the Orientation module:
 ```javascript
-import Orientation from 'react-native-orientation';
+import Orientation from 'react-native-orientation-next';
 ```
 
 ```javascript
