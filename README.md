@@ -1,4 +1,4 @@
-## React Native Orientation Next (A Fork of react-native-orientation-next)
+## React Native Orientation Next (A Fork of react-native-orientation)
 Listen to device orientation changes in React Native applications and programmatically set preferred orientation on a per screen basis. Works on both Android and iOS.
 
 ## Installing
